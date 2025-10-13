@@ -1,10 +1,8 @@
-
-import Home from "./pages/Home/Home";
-
+import RoutApp from "./routes";
 function App() {
   return (
     <>
-      <Home />
+      <RoutApp />
     </>
   );
 }

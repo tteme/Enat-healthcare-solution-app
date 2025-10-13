@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import logoF from "../../assets/images/logo/logo-icon-2.png";
 
 const Footer = () => {
@@ -7,9 +8,9 @@ const Footer = () => {
       <section className="footer-links-container d-none d-md-flex p-block-70 container">
         <section className="footer-logo-main-wrapper">
           <section className="footer-logo-wrapper">
-            <a href="#">
+            <Link to="/">
               <img src={logoF} alt="footer-logo" />
-            </a>
+            </Link>
           </section>
           <section className="slogan-content">
             <h4>Where Care Meets Compassion—Like a Mother's Embrace.</h4>
@@ -19,16 +20,16 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link to="/">About</Link>
             </li>
             <li>
-              <a href="#">Services</a>
+              <Link to="/">Services</Link>
             </li>
             <li>
-              <a href="#">Doctors</a>
+              <Link to="/">Doctors</Link>
             </li>
           </ul>
         </section>
