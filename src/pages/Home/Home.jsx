@@ -1,14 +1,31 @@
-import About from "../../components/About/About.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
-import Header from "../../components/Header/Header/Header.jsx";
-import HeroSection from "../../components/HeroSection/HeroSection.jsx";
-import Hotline from "../../components/Hotline/Hotline.jsx";
-import Service from "../../components/Service/Services.jsx";
-
+import React, { useState } from "react";
+import HeroSection from "../../components/HeroSection/HeroSection";
+// import AboutUs from "../../components/AboutUs/AboutUs";
+// import ServiceSection from "../../components/Services/ServiceSection/ServiceSection";
+// import HotLine from "../../components/HotLine/HotLine";
+import BmiCalculator from "../../components/BmiCalculator/BmiCalculator";
 const Home = () => {
+  const [showBmi, setShowBmi] = useState(false);
+
+  const handleShowBmi = () => {
+    setShowBmi(true); // Show BMI component
+    // Optional: scroll to it after rendering
+    setTimeout(() => {
+      document
+        .getElementById("bmi-calculator")
+        ?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
   return (
     <>
-      <HeroSection />
+      <HeroSection onClickBmi={handleShowBmi} />
+      {/* <AboutUs />
+      <HotLine />
+      <ServiceSection /> */}
+
+      {/* Render BMI only when showBmi is true */}
+      {showBmi && <BmiCalculator />}
     </>
   );
 };

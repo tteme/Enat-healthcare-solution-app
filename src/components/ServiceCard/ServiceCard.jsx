@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const ServiceCard = ({icon, title, subtitle,description}) => {
   return (
     <>
@@ -5,9 +7,9 @@ const ServiceCard = ({icon, title, subtitle,description}) => {
 
       <section className="service-item">
         <section className="service-icon">{icon}</section>
-        <a href="#" className="stretched-link">
+        <Link to="/" className="stretched-link">
           <h3>{title} </h3>
-        </a>
+        </Link>
         <p className="tag-line">{subtitle}</p>
         <p className="description">{description}</p>
       </section>

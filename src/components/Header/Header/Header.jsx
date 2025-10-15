@@ -31,7 +31,7 @@ const Header = () => {
           <section id="nav-bar" className="nav-bar">
             <ul className="nav-items">
               <li>
-                <Link to="/Home">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>
@@ -40,10 +40,10 @@ const Header = () => {
                 <Link to="/services">Services</Link>
               </li>
               <li>
-                <Link to="departments">Departments</Link>
+                <Link to="/departments">Departments</Link>
               </li>
               <li>
-                <Link to="#doctors">Doctors</Link>
+                <Link to="/doctors">Doctors</Link>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>
